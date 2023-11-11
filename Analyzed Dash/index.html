@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="UTF-8">
+  <title> Payments Page </title>
+  <link rel="stylesheet" href="styles.css">
+  <!-- Boxiocns CDN Link -->
+  <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+
+  <aside class="sidebar close">
+    <div class="logo-details">
+      <img src="Infit transparent 2.png" alt="">
+      <span class="logo_name"></span>
+    </div>
+    <section class="links">
+
+      <article class="nav-links">
+        <ul class="links-list">
+          <li class="list-item">
+            <a href="">
+              <div class="icon-link">
+
+                <i class='bx bx-grid-alt'></i>
+                <span class="link_name">Dashboard</span>
+              </div>
+            </a>
+
+          </li>
+          <li class="list-item">
+            <div class="iocn-link">
+              <a href="#">
+                <div class="icon-link">
+                  <i class='bx bx-message-detail'></i>
+                  <span class="link_name">Messages</span>
+                </div>
+
+              </a>
+            </div>
+          </li>
+          <li class="list-item">
+            <a href="#">
+              <div class="icon-link">
+                <img src="C:\Users\kushd\OneDrive\Desktop\Analyzed Payment\Vector (2).png" class="icons" alt="">
+                <span class="link_name">Live</span>
+              </div>
+            </a>
+          </li>
+          <li class="list-item">
+            <a href="#">
+              <div class="icon-link">
+
+                <img src="./svg/Group (2).svg" class="icons" alt="">
+                <span class="link_name">Appointments</span>
+              </div>
+            </a>
+
+          </li>
+          <li class="list-item">
+            <a href="#">
+              <div class="icon-link">
+
+                <img src="./svg/cil_group (1).svg" alt="" class="icons">
+                <span class="link_name">Clients</span>
+              </div>
+            </a>
+
+          </li>
+
+          <li class="list-item">
+            <a href="#">
+              <div class="icon-link">
+
+                <i class='bx bx-calendar-check'></i>
+                <span class="link_name">Diet Plans</span>
+              </div>
+            </a>
+
+          </li>
+          <li class="list-item " id="payments">
+
+            <a href="#">
+              <div class="icon-link">
+
+                <img src="./svg/Vector (5).svg" alt="" class="icons">
+                <span class="link_name">Payments</span>
+                <div class="sidebar-arrow">
+
+                  <i class='bx bxs-chevron-down arrow'></i>
+                </div>
+              </div>
+            </a>
+
+            <ul class="submenu">
+              <li class="submenu-item">
+                <a href="#">
+                  Your Bills
+                </a>
+              </li>
+              <li class="submenu-item">
+                <a href="#">
+                  Client Payments
+                </a>
+              </li>
+
+            </ul>
+
+
+
+          </li>
+
+          <li class="list-item">
+            <a href="#">
+              <div class="icon-link">
+
+                <img src="./svg/Vector (6).svg" alt="" class="icons">
+                <span class="link_name">Recipes</span>
+              </div>
+            </a>
+
+          </li>
+          <li class="list-item">
+            <a href="#">
+              <div class="icon-link">
+
+                <img src="./svg/Vector (7).svg" alt="" class="icons">
+                <span class="link_name">Health Form</span>
+              </div>
+            </a>
+
+          </li>
+
+        </ul>
+      </article>
+
+
+      <article class="action-links">
+        <ul class="links-list">
+          <li class="list-item">
+            <a href="#">
+              <div class="icon-link">
+                <img src="./svg/Group 1000003721 (1).svg" alt="" class="icons">
+                <span class="link_name">get help</span>
+              </div>
+            </a>
+          </li>
+
+          <li class="list-item">
+            <a href="#">
+              <div class="icon-link">
+                <img src="./svg/Group 1000003720 (1).svg" alt="" class="icons">
+                <span class="link_name">settings</span>
+              </div>
+            </a>
+          </li>
+          <li class="list-item">
+            <a href="#">
+              <div class="icon-link">
+                <img src="./svg/Vector (8).svg" alt="" class="icons" style="width: 1rem;transform: translateX(.2rem);">
+                <span class="link_name">log out</span>
+              </div>
+            </a>
+          </li>
+        </ul>
+      </article>
+
+
+    </section>
+  </aside>
+  <section class="home-section">
+    <div class="home-content">
+      <span class="text">Good Morning, John Wayne<br>
+        <h6>Your performance summary this week</h6>
+      </span>
+      <div class="header-icon">
+        <i class='bx bx-search-alt-2'></i>
+        <i class='bx bx-bell'></i>
+        <i class='bx bx-user' ></i>
+      </div>
+    </div>
+    <div class="lable-txt">
+        <span class="text">
+          <p>Dashboard</p>
+        </span>
+    </div>
+    
+
+  </section>
+
+  <script>
+
+
+    // dropdown
+    const link = document.getElementById('payments')
+    link.addEventListener('click', (e) => {
+      e.currentTarget.classList.toggle('show')
+    })
+  </script>
+
+</body>
+
+</html>
