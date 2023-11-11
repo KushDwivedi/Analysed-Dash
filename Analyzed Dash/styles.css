@@ -166,10 +166,7 @@ i {
   border: solid 1px;
   height: 11rem;
 }
-.client-progress {
-  border: solid 1px;
-  height: 9rem;
-}
+
 .tasks-list {
   /* border: solid 1px; */
   height: 16rem;
@@ -261,4 +258,53 @@ i {
   color: hsla(0, 1%, 36%, 0.824);
   font-weight: 500;
   cursor: pointer;
+}
+
+.client-progress {
+  height: 9rem;
+}
+.client-header {
+  display: flex;
+  justify-content: space-between;
+  text-transform: capitalize;
+
+  padding: 0rem 0;
+}
+.client-header-container {
+  display: flex;
+  gap: 3rem;
+}
+.client-body {
+  display: flex;
+  justify-content: space-between;
+  padding-right: 2rem;
+}
+.stats-container {
+  display: flex;
+  gap: 2rem;
+}
+.stats {
+  display: flex;
+  height: 6rem;
+
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+.stats-img {
+  display: flex;
+  align-items: center;
+  gap: 0.3rem;
+  > p {
+    text-transform: capitalize;
+    font-weight: 500;
+    font-size: 0.95rem;
+  }
+}
+.circle-btn {
+  width: 4rem;
+  height: 4rem;
+  border-radius: 50%;
+  font-size: 2rem;
+  font-weight: 100;
 }
